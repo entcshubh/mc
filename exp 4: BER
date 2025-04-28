@@ -1,0 +1,36 @@
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.special import erfc
+
+N = int(1e6)
+
+ip = np.random.rand(N) > 0.5
+s = 2 * ip - 1
+
+Eb_N0_dB = np.arange(-3, 36)
+nErr = np.zeros(len(Eb_N0_dB))
+
+for ii in range(len(Eb_N0_dB)):
+    n = (1/np.sqrt(2)) * (np.random.randn(N) + 1j*np.random.randn(N))
+    h = (1/np.sqrt(2)) * (np.random.randn(N) + 1j*np.random.randn(N))
+    y = h * s + 10**(-Eb_N0_dB[ii]/20) * n
+    yHat = y / h
+    ipHat = np.real(yHat) > 0
+    nErr[ii] = np.sum(ip != ipHat)
+
+simBer = nErr / N
+
+theoryBerAWGN = 0.5 * erfc(np.sqrt(10**(Eb_N0_dB/10)))
+EbN0Lin = 10**(Eb_N0_dB/10)
+theoryBer = 0.5 * (1 - np.sqrt(EbN0Lin / (EbN0Lin + 1)))
+
+plt.semilogy(Eb_N0_dB, theoryBerAWGN, 'cd-', linewidth=2, label='AWGN-Theory')
+plt.semilogy(Eb_N0_dB, theoryBer, 'bp-', linewidth=2, label='Rayleigh-Theory')
+plt.semilogy(Eb_N0_dB, simBer, 'mx-', linewidth=2, label='Rayleigh-Simulation')
+plt.axis([-3, 35, 1e-5, 0.5])
+plt.grid(True)
+plt.legend()
+plt.xlabel('Eb/No, dB')
+plt.ylabel('Bit Error Rate')
+plt.title('BER for BPSK modulation in Rayleigh channel')
+plt.show()
