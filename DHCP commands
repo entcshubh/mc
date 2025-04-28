@@ -11,10 +11,6 @@ ENTC_DEPT:
 Router(config)# interface fastEthernet0/1
 Router(config-if)# ip address 192.168.20.1 255.255.255.0
 Router(config-if)# no shutdown
-IT_DEPT:
-Router(config)# interface gigabitEthernet0/2
-Router(config-if)# ip address 192.168.30.1 255.255.255.0
-Router(config-if)# no shutdown
 
 
 
@@ -23,7 +19,6 @@ ________________________________________________Step 3: DHCP Configuration on Ro
 Exclude Router's addresses first:
 Router(config)# ip dhcp excluded-address 192.168.10.1
 Router(config)# ip dhcp excluded-address 192.168.20.1
-Router(config)# ip dhcp excluded-address 192.168.30.1
 
 
 _______________________________________________Step 4: PC and Laptop DHCP Setup
