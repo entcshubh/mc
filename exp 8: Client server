@@ -1,0 +1,47 @@
+#___________________CLIENT________________________
+#_name txet file as textfile.txt
+
+import socket
+
+# Client setup
+client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+client_socket.connect(('localhost', 9999))
+
+# Open a file to write received data
+with open('output.txt', 'wb') as file:
+    while True:
+        data = client_socket.recv(1024)
+        if not data:
+            break
+        file.write(data)
+
+print("File received successfully.")
+
+client_socket.close()
+
+
+
+
+#_______________________________________server____________________________
+
+import socket
+
+# Server setup
+server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+server_socket.bind(('localhost', 9999))
+server_socket.listen(1)
+
+print("Server is listening for connection...")
+
+conn, addr = server_socket.accept()
+print(f"Connected to: {addr}")
+
+# Open the file to send
+with open('testfile.txt', 'rb') as file:
+    data = file.read()
+    conn.sendall(data)
+
+print("File sent successfully.")
+
+conn.close()
+server_socket.close()
