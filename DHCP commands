@@ -4,11 +4,11 @@ From your CLI:
 Router> enable
 Router# configure terminal
 Com DEPT:
-Router(config)# interface gigabitEthernet0/0
+Router(config)# interface fastEthernet0/0
 Router(config-if)# ip address 192.168.10.1 255.255.255.0
 Router(config-if)# no shutdown
 ENTC_DEPT:
-Router(config)# interface gigabitEthernet0/1
+Router(config)# interface fastEthernet0/1
 Router(config-if)# ip address 192.168.20.1 255.255.255.0
 Router(config-if)# no shutdown
 IT_DEPT:
