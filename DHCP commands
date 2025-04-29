@@ -20,6 +20,13 @@ Exclude Router's addresses first:
 Router(config)# ip dhcp excluded-address 192.168.10.1
 Router(config)# ip dhcp excluded-address 192.168.20.1
 
+ip dhcp pool comp
+network 192.168.10.0 255.255.255.0
+default-router 192.168.10.1 
+
+ip dhcp pool entc
+network 192.168.20.0 255.255.255.0
+default-router 192.168.20.1
 
 _______________________________________________Step 4: PC and Laptop DHCP Setup
 For each PC and Laptop:
