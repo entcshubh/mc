@@ -1,0 +1,58 @@
+GPRS (General Packet Radio Service) is an expansion of GSM (Global System for Mobile Communications) networks that offer packet-switched data services. The GPRS architecture consists of different network components and interfaces that work together to provide data services. In this article, we will discuss everything about GPRS architecture.
+
+What is GPRS?
+GPRS stands for General Packet Radio Service. It is the modified version of GSM architecture. GPRS is a packet-oriented mobile data mechanism, that can carry data packets as well. In GSM architecture, only voice signals can be transported, so being an enhanced version GPRS can transmit voice as well as data packets. It uses the same physical radio channel as GSM does, the only difference is it has a new logic defined for the radio channel.
+
+GPRS Network Architecture
+GPRS tries to make maximum use of the existing physical structure of GSM. It has introduced a new entity named GPRS support nodes(GSN) whose responsibility is to route and deliver a data packet. GSN is of two types:
+
+Serving GPRS Support Node (SGSN)
+Gateway GPRS Support Node (GGSN)
+ GPRS Architecture 
+GPRS Architecture 
+
+Components of GPRS Architecture
+1. Mobile Station(MS)
+GPRC requires enhanced mobile stations, as existing mobile stations were designed according to the GSM network, and they were unable in handling enhanced data packets. A variety of high-speed mobile stations are available to support enhanced data packets. These mobile stations are also capable of handling the GSM architecture to make voice calls. 
+
+2. Base Station Controller (BSC)
+ In GSM architecture there is one component called BSC. But in GPRS there is one component is added to BSC called PCU. PCU stands for Packet Control Unit. If the signal comes to BSC and that signal contains data, then PCU routes to the SGSN. The interface is used between BSC and PCU is the FRI interface. After the signal comes to SGSN, it delivers the data packet to the GGSN. GGSN routes the data packet to the data network (PDN- Predefined Data Network).
+
+3. GPRS Support Nodes
+GPRS support nodes are of two types:
+
+(a) Serving GPRS Support Node (SGSN): It is responsible for the following tasks:
+
+Packet Delivery
+Mobility management
+apply/ sign off of terminals
+localization
+LLC (Logical Link Control) management
+Authentication
+Billing
+(b) Gateway GPRS Support Node (GGSN): It is responsible for the following tasks:
+
+Mediator between GPRS between backbone and external data networks.
+Saves current data for the SGSN address of the participant as well as their profile and data for authentication and invoice.
+4. Internal Backbone Network
+It is an IP-based network that is used to support the working of GPRS and this is responsible to carry new packets between different GSNs. The tunneling is used between SGSNs and GGSNs to exchange information without informing the internal backbone.
+
+5. Mobility Support
+GPRS has the following mechanism to support mobility in the network:
+
+Attachment Procedure
+Location and Handoff Management
+6. Routing Area
+This is similar to the location area in GSM the only difference is routing area use fewer cells as routing areas are smaller than the location area. 
+
+7. SMS in GSM
+GSM introduced a mechanism of Short Messaging Service(SMS) which is similar to peer-to-peer Instant messaging.
+
+Benefits Of GPRS
+Mobility: The capacity to keep up consistent voice and information interchanges while moving.
+Cost Efficient: Communication via GPRS is cheaper than through the regular GSM network.
+Immediacy: Allows customers to obtain connectivity when needed, regardless of location and without a lengthy login session.
+Localization: Enables customers to acquire data applicable to their present area.
+Easy Billing: GPRS packet transmission offers an easier to use billing than that offered by circuit switched administrations.
+Conclusion
+In conclusion, GPRS is a GSM advancement that allows for packet-switched data services in addition to standard voice services. GPRS enables efficient data packet transfer, increased mobility, and cost-effective communication by adding new components such as the SGSN and GGSN while utilizing the current GSM infrastructure. The development enables mobile devices to manage both voice and data, allowing for a variety of apps and services that are essential to modern mobile communication.
