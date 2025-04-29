@@ -1,0 +1,117 @@
+GSM stands for Global System for Mobile Communication. It is a digital mobile network commonly utilized by mobile phone users around the world. It is the most popular of the three digital wireless telephony systems (TDMA, GSM, and CDMA) and uses the combination of FDMA and TDMA. It uses 4 different frequency bands 850 MHz, 900 MHz, 1800 MHz, and 1900 MHz. GSM converts and compresses data before sending it along a channel with two other streams of user data, each with its time slot.
+
+GSM have 4 different sizes of cells:
+
+Macro: In this size of the cell, a Base Station antenna is installed.
+Micro: In this size of cell, antenna height is less than the average roof level.
+Pico: Small cells’ diameter of a few meters.
+Umbrella: It covers the shadowed (Fills the gaps between cells) regions.
+
+
+Features of GSM
+Supports international roaming
+Clear voice clarity
+Ability to support multiple handheld devices.
+Spectral / frequency efficiency
+Low powered handheld devices.
+Ease of accessing network
+International ISDN compatibility.
+Low service cost.
+New features and services.
+The Architecture of GSM
+A GSM network comprises of many functional units which can be broadly divided into:
+
+The Mobile Station (MS)
+The Base Station Subsystem (BSS)
+The Network Switching Subsystem (NSS)
+The Operation Support Subsystem (OSS)
+Mobile Station (MS):
+MS comprises user equipment and software needed for communication with a mobile network.  Mobile Station (MS) =  Mobile Equipment(ME) + Subscriber Identity Module (SIM). Now, these mobile stations are connected to tower and that tower connected with BTS through TRX. TRX is a transceiver which comprises transmitter and receiver. Transceiver has two performance of sending and receiving.
+
+Base Station Subsystem (BSS) :
+Base Station Subsystem handles traffic and signaling between a mobile phone and the network switching subsystem. BSS having two components :
+
+BTS stands for Base Transceiver Station which facilitates wireless communication between user equipment and a network. Every tower has BTS. 
+BSC stands for Base Station Controller. BSC has multiple BTS. You can consider the BSC as a local exchange of your area which has multiple towers and multiple towers have BTS.
+Network Switching Subsystem (NSS) :
+NSS is the core network of GSM that carried out call and mobility management functions for mobile phone present in network. NSS have different components like:
+
+MSC stands for Mobile Switching Center. MSC is associated with communication switching functions such as call setup, call release and routing. Call tracing, call forwarding all functions are performed at the MSC level.  MSC is having further components like VLR, HLR, AUC, EIR and PSTN.
+VLR stands for Visitor Location Register. VLR is a database which contains the exact location of all mobile subscribers currently present in the service area of MSC. If you are going from one state to another state then your entry is marked into the database of VLR.
+HLR stands for Home Location Register. HLR is a database containing pertinent data regarding subscribers authorized to use a GSM network. If you purchase SIM card from in the HLR. HLR is like a home which contains all data like your ID proof, which plan you are taking, which caller tune you are using etc.
+AUC stands for  Authentication Center. AUC authenticates the mobile subscriber that wants to connect in the network.
+EIR stands for Equipment Identity Register. EIR is a database that keeps the record of all allowed or banned in the network. If you are banned in the network then you can’t enter the network, and you can’t make the calls.
+PSTN stands for Public Switched Telephone Network. PSTN connects with MSC. PSTN originally a network of fixed line analog telephone systems. Now almost entirely digital in its core network and includes mobile and other networks as well as fixed telephones. The earlier landline phones which places at our home is nothing but PSTN.
+Operation Support Subsystem (OSS):
+OSS is a functional entity which the network operator monitor and control the system. Purpose of OSS is to offer the customer cost-effective support for all GSM related maintenance services.
+
+OMC stands for Operation Maintenance  Center. It is the part of OSS. OMC monitor and maintain the performance of each MS, BSC and MSC within a GSM system.
+Architecture of GSM
+
+Suppose there are 3 Mobile stations which are connected with the tower and that tower is connected to BTS through TRX, then further connected to BSC and MSC.
+
+Three subsystem BSS, NSS and OSS are connected with each other via some interfaces. Total three interfaces are there:
+
+Air Interface is also known as UM interface. Interface  between MS and BTS is called as UM interface because it is mobile analog to the U interface of ISDN.
+Abis Interface is a BSS internal interface linking with BTS and BSC.
+A interface provides communication between BSS and MSC.
+How Does GSM Work
+GSM describe the procedures for second-generation digital mobile networks, such as those used by mobile phones. It is a broad-area communications technology program that uses digital radio channeling to provide audio, information, and multimedia communication systems. Every GSM radio channel is 200 kHz broad and is further divided into frames of eight time slots. The GSM system consists of mobile stations, base stations, and interweaving switching systems.
+
+The GSM program allows 8 to 16 audio users to share a single radio channel, and each radio transmission station can have numerous radio channels. Because of its simplicity, cost, and accessibility, GSM is now the most often utilised network technology in the Internet of Things (IoT).
+
+GSM
+GSM
+
+Read more about Working of GSM.
+
+Services of GSM
+1. Bearer services/ data services: GSM specifies different  mechanism for data transmission, The original GSM allowing for data rates of up to 9600 bits/s. Bearer services permit transparent or non transparent data transmission.
+
+Transparent bearer services: Transparent bearer services only use the physical layer to transmit data. Data transmission has a constant delay at throughput if no transmission error occurs.
+Non-transparent bearer services: Non-transparent bearer services use protocols of layer two and three two three to implement error correction and flow control.(data link layer and network layer).
+2. Tele services such as:
+
+Video calls and face emoji.
+Short text message(SMS).
+3. Supplementary services are advanced services such as:
+
+Conference calls.
+Call waiting.
+Call forwarding.
+4. GSM security: GSM offers security using confidential information stored in the AUC and in the individual SIM. The SIM stores personal secret data and is protected with a pin against unauthorized use. 
+
+Applications of GSM
+Mobile Telephony
+VoIP Integration
+SMS (Short Message Service)
+Mobile Banking
+Smart Home Systems
+Surveillance Systems
+Alarm System
+Cell Broadcasting
+Advantages of GSM
+Compatibility: GSM is widely used around the world, so it is compatible with many different networks and devices.
+Security: GSM offers enhanced security features such as authentication, encryption and confidentiality which helps to protect the user’s privacy and data.
+Efficient use of bandwidth: GSM uses a time-division multiplexing (TDM) technique which enables many users to share the same frequency channel at different times, making it an efficient use of the available bandwidth.
+Roaming: GSM allows users to roam internationally and use their mobile phones in other countries that use the same GSM standard.
+Wide range of features: GSM supports a wide range of features, including call forwarding, call waiting, voicemail, conference calling, and more.
+Disadvantages of GSM
+Limited coverage: GSM networks may have limited coverage in some remote areas, which can make it difficult for users to make calls or access the internet.
+Network congestion: GSM networks may become congested during peak hours, which can lead to dropped calls or poor call quality.
+Security vulnerabilities: Although GSM offers enhanced security features, it is still vulnerable to certain types of attacks, such as eavesdropping and spoofing.
+Data transfer speed: GSM networks offer relatively slow data transfer speeds compared to newer technologies such as 3G and 4G.
+Limited capacity: GSM networks have a limited capacity for handling large volumes of data, which can be a disadvantage for users who require high-speed internet access or other data-intensive applications.
+GSM vs Other Wireless Technologies(CDMA,LTE)
+GSM, CDMA and LTE cellular-wireless communications are very different in terms of technology and business objectives. GSM is the oldest of the three. GSM encoded and decoded data using processor/chip technology available at the time.
+
+CDMA (Code Division Multiple Access) is basically a channel access method and is also an example of multiple access. Multiple access basically means that information by several transmitters can be sent simultaneously onto a single communication channel.
+
+LTE (long-term evolution) provides fast peak data transmission, with initial speeds of up to 100 Mbps downstream and 30 Mbps upstream. Due to its high speeds, low latency, and improved capabilities, LTE enables users to enjoy faster data transfer rates, seamless browsing, and enhanced user experience.
+
+Is GSM Still Relevant Today
+Many telecom providers worldwide are decommissioning GSM networks to free up spectrum for more advanced technologies like 4G and 5G. Countries like the USA, Australia, and parts of Europe have already shut down or announced plans to shut down GSM services because modern networks offer high-speed internet and multimedia services. They also provide better spectrum efficiency which allows more users and faster data speeds. GSM networks are shut down in favor of 4G and 5G but some industries continue to rely on 2G GSM technology for specific applications:
+
+Many IoT devices, such as smart meters, vehicle tracking systems, and industrial sensors, still use GSM networks due to their low power consumption and wide coverage.
+GSM remains a viable option in remote areas where 3G and 4G infrastructure is lacking. It is still widely used for voice calls and SMS in such locations.
+Certain emergency and mission-critical systems maintain GSM connectivity as a backup option in case of primary network failures.
